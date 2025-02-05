@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Web Page with JavaScript and jQuery</title>
+    <link rel="stylesheet" href="exp3 problem2.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+    <h1 id="page-title">Welcome to Dynamic Web Page</h1>
+    
+    <div id="content">
+        <p id="intro-text">This is an example of dynamic web page interaction.</p>
+        <p class="highlight">This is an example paragraph with class "highlight".</p>
+        <p class="highlight">This is another paragraph with class "highlight".</p>
+    </div>
+
+    <!-- Button to change text, color, and image -->
+    <button id="change-text-btn">Click to Change Text and Color</button>
+
+    <div id="image-container">
+        <img id="image" src="rishabh.jpg" alt="Image" width="200">
+        <button id="change-image-btn">Click to Change Image</button>
+    </div>
+
+    <div id="form-container">
+        <form id="user-form">
+            <label for="username">Username: </label>
+            <input type="text" id="username" name="username"><br><br>
+            <label for="email">Email: </label>
+            <input type="email" id="email" name="email"><br><br>
+            <button type="submit" id="submit-form-btn">Submit Form</button>
+        </form>
+    </div>
+
+    <div id="new-node-container">
+        <button id="add-node-btn">Add a New Text Node</button>
+        <button id="delete-node-btn">Delete Text Node</button>
+    </div>
+
+    <script src="exp3 problem2.js"></script>
+</body>
+</html>

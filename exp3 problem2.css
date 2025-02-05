@@ -1,0 +1,25 @@
+/* Simple styling for the dynamic page */
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f4f4f9;
+}
+
+h1 {
+    color: #333;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#image-container {
+    margin-top: 20px;
+}
+
+#new-node-container {
+    margin-top: 30px;
+}

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration & Course Enrollment</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="index.css">
+
+    <style>
+        /* Internal CSS for page-specific styling */
+        body {
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+
+        .navbar {
+            margin-bottom: 20px;
+        }
+
+        .table th, .table td {
+            text-align: center;
+        }
+
+        .btn-custom {
+            background-color: #007bff;
+            color: white;
+        }
+
+        .card-custom {
+            border-radius: 10px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">University Portal</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#registration">Student Registration</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#course-enrollment">Course Enrollment</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#library">Library</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Registration Section -->
+    <section id="registration" class="container card-custom">
+        <h2 class="text-center">Student Registration</h2>
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="studentName">Full Name:</label>
+                <input type="text" class="form-control" id="studentName" placeholder="Enter full name" required>
+            </div>
+            <div class="form-group">
+                <label for="studentEmail">Email address:</label>
+                <input type="email" class="form-control" id="studentEmail" placeholder="Enter email" required>
+            </div>
+            <div class="form-group">
+                <label for="studentDOB">Date of Birth:</label>
+                <input type="date" class="form-control" id="studentDOB" required>
+            </div>
+            <button type="submit" class="btn btn-custom">Submit</button>
+        </form>
+    </section>
+
+    <!-- Course Enrollment Section -->
+    <section id="course-enrollment" class="container card-custom">
+        <h2 class="text-center">Course Enrollment</h2>
+        <form>
+            <div class="form-group">
+                <label for="course">Select Course:</label>
+                <select class="form-control" id="course">
+                    <option>Computer Science</option>
+                    <option>Electrical Engineering</option>
+                    <option>Mechanical Engineering</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-custom">Enroll</button>
+        </form>
+    </section>
+
+    <!-- Library Section -->
+    <section id="library" class="container card-custom">
+        <h2 class="text-center">Library Management</h2>
+        <p>Here you can search for available books, check out or reserve books.</p>
+
+        <!-- Table of Books -->
+        <h3>Available Books</h3>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Book Title</th>
+                    <th>Author</th>
+                    <th>Availability</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Advanced JavaScript</td>
+                    <td>Rishabh Singh</td>
+                    <td>Available</td>
+                </tr>
+                <tr>
+                    <td>Data Structures</td>
+                    <td>Prasiddha shukla</td>
+                    <td>Checked Out</td>
+                </tr>
+                <tr>
+                    <td>Machine Learning</td>
+                    <td>Siddhant jain</td>
+                    <td>Available</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-center text-white py-3">
+        <p>&copy; 2025 University Portal. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
